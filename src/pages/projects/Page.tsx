@@ -8,7 +8,7 @@ const ProjectsPage: React.FC = () => {
 
   return (
     <div className="main-content_section projects">
-      <h1>Projects Page</h1>
+      <h1>Recent Projects</h1>
       <div className="projects-container">
         {data.map((project) => {
           //console.log(project);
