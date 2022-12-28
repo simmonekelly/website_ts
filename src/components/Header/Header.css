@@ -1,8 +1,21 @@
 .header {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 20px;
+  padding: 20px;
   background-color: #606c38;
+}
+
+nav {
+  display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .header {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  nav {
+    display: block;
+  }
 }
