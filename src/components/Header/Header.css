@@ -3,8 +3,24 @@
   background-color: #606c38;
 }
 
+.header-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header a {
+  color: inherit;
+  padding: 0 20px;
+}
+
 nav {
   display: none;
+}
+
+.header-contactMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (min-width: 481px) {

@@ -4,7 +4,7 @@
     "skill": [
       { "name": "HTML5", "image": "FaHtml5" },
       { "name": "CSS", "image": "FaCss3Alt" },
-      { "name": "TypeScript", "image": "FaGit" },
+      { "name": "TypeScript", "image": "SiTypescript" },
       { "name": "JavaScript", "image": "IoLogoJavascript" }
     ]
   },
@@ -20,7 +20,7 @@
     "skill": [
       { "name": "GraphQL", "image": "GrMysql" },
       { "name": "Heroku", "image": "GrHeroku" },
-      { "name": "Git", "image": "FaGithub" }
+      { "name": "Git", "image": "FaGit" }
     ]
   }
 ]

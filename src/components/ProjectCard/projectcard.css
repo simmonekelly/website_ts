@@ -1,10 +1,13 @@
 .projectcard {
-  width: 500px;
-  margin: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  height: 300px;
   justify-content: space-between;
+  background-color: #e9edc9;
+  border-radius: 5px;
+  padding: 20px;
+  border: solid 1px #606c38;
+  box-shadow: 10px 5px 5px #606c38;
 }
 
 .projectcard_icon-header {
@@ -21,4 +24,11 @@
 .projectcard_icon {
   height: 25px;
   width: 25px;
+}
+
+@media screen and (min-width: 481px) {
+  .projectcard {
+    width: 500px;
+    height: 300px;
+  }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import useSkillIcon from "./useSkillIcon";
 
 export type SkillProps = {
   image: string;
@@ -6,10 +7,11 @@ export type SkillProps = {
 };
 
 const Skill: React.FC<SkillProps> = ({ image, name }) => {
+  const skillIcon = useSkillIcon(image);
   return (
     <div>
       <p>{name}</p>
-      <p>image</p>
+      {skillIcon}
     </div>
   );
 };

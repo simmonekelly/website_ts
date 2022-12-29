@@ -16,7 +16,7 @@ const Header: React.FC = () => {
     <section className="header">
       <h2>Simmone Kelly</h2>
       <div>
-        <GoLocation />
+        <GoLocation className="header-icon" />
         New York, NY
       </div>
       <p>
@@ -27,40 +27,25 @@ const Header: React.FC = () => {
         <p>About Me</p>
         <p>Projects</p>
         <p>Skills</p>
-        {/* <Link to="/projects">
-            className= {props.location.pathname.includes("projects") ? "active": ""}>
-            <AiOutlineFundProjectionScreen className="footer_icon" />
-            <p>Projects</p>
-          </Link> */}
-        {/* <Link to="/">
-            className= {props.location.pathname === "/" ? "active": ""}>
-            <IoPersonSharp className="footer_icon" />
-            <p>Profile</p>
-          </Link> */}
-        {/* <Link to="/skills">
-            className= {props.location.pathname.includes("skills") ? "active": ""}>
-            <IoCog className="footer_icon" />
-            <p>Skills</p>
-          </Link> */}
       </nav>
-      <div>Contact Me</div>
-      <div>
+      <h4>Contact Me</h4>
+      <div className="header-contactMe">
         <a href="mailto: simmone.kelly@gmail.com">
-          <MdOutlineMail className="overview_contact-icon" />
+          <MdOutlineMail className="header-icon" />
         </a>
         <a
           href="https://github.com/simmonekelly"
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub className="overview_contact-icon" />
+          <FaGithub className="header-icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/simmonekelly/"
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedin className="overview_contact-icon" />
+          <FaLinkedin className="header-icon" />
         </a>
       </div>
     </section>

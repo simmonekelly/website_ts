@@ -4,7 +4,7 @@ import "./aboutPage.css";
 const AboutPage: React.FC = () => {
   return (
     <div className="main-content_section">
-      <h1>About Me</h1>
+      <h1>Who Am I?</h1>
       <p>“Who are you?” </p>
       <p>
         I hardly know, just at present—at least I know who I was when I got up
@@ -13,7 +13,7 @@ const AboutPage: React.FC = () => {
       </p>
       <div className="aboutMe-columns">
         <div>
-          <h2>Who Am I?</h2>
+          <h2>About Me</h2>
           <p>
             Email marketer turned full stack web developer. When I'm not your
             guy in the chair, you can find me picking up heavy things and
