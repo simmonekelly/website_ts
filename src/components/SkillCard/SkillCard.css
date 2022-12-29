@@ -1,4 +1,27 @@
-.section {
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  background-color: #d4a373;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.skill-category-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .aboutMe-columns {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .aboutMe-columns {
+    display: flex;
+    flex-direction: row;
+  }
 }

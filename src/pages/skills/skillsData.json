@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Languages",
+    "skill": [
+      { "name": "HTML5", "image": "FaHtml5" },
+      { "name": "CSS", "image": "FaCss3Alt" },
+      { "name": "TypeScript", "image": "FaGit" },
+      { "name": "JavaScript", "image": "IoLogoJavascript" }
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "skill": [
+      { "name": "Express", "image": "SiExpress" },
+      { "name": "React", "image": "FaReact" }
+    ]
+  },
+  {
+    "category": "Tools",
+    "skill": [
+      { "name": "GraphQL", "image": "GrMysql" },
+      { "name": "Heroku", "image": "GrHeroku" },
+      { "name": "Git", "image": "FaGithub" }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+/* .aboutMe-columns {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+  }
+  
+@media screen and (min-width: 481px) and (max-width: 768px) {
+.aboutMe-columns {
+    display: flex;
+    flex-direction: row;
+}
+}
+  
+@media screen and (min-width: 769px) {
+.aboutMe-columns {
+    display: flex;
+    flex-direction: row;
+}
+} */

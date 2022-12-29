@@ -1,39 +1,26 @@
 import React from "react";
 import "./SkillCard.css";
+import type { SkillProps } from "./Skill";
+import Skill from "./Skill";
 
-type Props = {
-  image: string;
-  title: string;
+type SkillCardProps = {
+  skillCategory: SkillType;
 };
 
-const SkillCard: React.FC = () => {
+type SkillType = {
+  category: string;
+  skill: SkillProps[];
+};
+
+const SkillCard: React.FC<SkillCardProps> = ({ skillCategory }) => {
+  console.log(skillCategory);
   return (
-    <div>
-      <div className="section">
-        section
-        <div>
-          skill
-          <div>image</div>
-          <div>title</div>
-        </div>
-        <div>
-          skill
-          <div>image</div>
-          <div>title</div>
-        </div>
-      </div>
-      <div className="section">
-        section
-        <div>
-          skill
-          <div>image</div>
-          <div>title</div>
-        </div>
-        <div>
-          skill
-          <div>image</div>
-          <div>title</div>
-        </div>
+    <div className="skill-category">
+      <h3>{skillCategory.category}</h3>
+      <div className="skill-category-container">
+        {skillCategory.skill.map((skill) => {
+          return <Skill image={skill.image} name={skill.name} />;
+        })}
       </div>
     </div>
   );
