@@ -1,12 +1,14 @@
 .aboutMe-columns {
   text-align: left;
-  /* display: flex;
-  flex-direction: row; */
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) {
   .aboutMe-columns {
     display: flex;
     flex-direction: row;
+  }
+  .aboutMe-columns_column {
+    text-align: center;
+    width: 50%;
   }
 }

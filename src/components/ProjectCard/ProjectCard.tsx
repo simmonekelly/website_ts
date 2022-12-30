@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div className="projectcard">
       <div className="projectcard_icon-header">
-        <h2>{project.name}</h2>
+        <h3>{project.name}</h3>
         <a href={project.github}>
           <FaGithub className="projectcard_icon" />
         </a>

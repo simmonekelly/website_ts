@@ -3,11 +3,13 @@
   flex-direction: column;
   background-color: #d4a373;
   /* background-color: #dda15e; */
+  background-color: #faedcd;
   margin-bottom: 20px;
   border-radius: 5px;
   padding-top: 10px;
-  border: solid 1px #bc6c25;
-  box-shadow: 10px 5px 5px #bc6c25;
+  /* border: solid 1px #bc6c25; */
+  border: solid 1px #dda15e;
+  box-shadow: 10px 5px 5px #dda15e;
 }
 .skill-category-container {
   display: flex;

@@ -4,14 +4,11 @@ import data from "./projectsData.json";
 import "./projectspage.css";
 
 const ProjectsPage: React.FC = () => {
-  //console.log(data);
-
   return (
     <div className="main-content_section projects">
-      <h1>Recent Projects</h1>
+      <h2>Recent Projects</h2>
       <div className="projects-container">
         {data.map((project) => {
-          //console.log(project);
           return <ProjectCard project={project} />;
         })}
       </div>

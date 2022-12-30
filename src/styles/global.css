@@ -45,10 +45,11 @@ h4 {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   p {
     font-size: 18px;
+    line-height: 22px;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 46px;
   }
 
   h2 {
@@ -67,10 +68,11 @@ h4 {
 @media screen and (min-width: 769px) {
   p {
     font-size: 20px;
+    line-height: 24px;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 46px;
   }
 
   h2 {

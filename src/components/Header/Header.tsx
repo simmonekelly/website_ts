@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import me from "../../images/me.jpg";
 
 type Props = {
   location: {};
@@ -14,14 +15,17 @@ type Props = {
 const Header: React.FC = () => {
   return (
     <section className="header">
-      <h2>Simmone Kelly</h2>
+      <h1>Simmone Kelly</h1>
+      <div className="header-image_container">
+        <img alt="simmone" className="header-image" src={me} />
+      </div>
       <div>
         <GoLocation className="header-icon" />
         New York, NY
       </div>
       <p>
-        When I realized my Hawgwarts letter was never going to arrive, I decided
-        to learn the next best thing. multiverse
+        Everyone fails at who they're supposed to be. The measure of a person is
+        how well they succeed at being who they are.
       </p>
       <nav>
         <p>About Me</p>
