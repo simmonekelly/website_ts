@@ -16,7 +16,7 @@ const SkillsPage: React.FC = () => {
         I was first introduced to programming in the days of MySpace before I
         new you could make a career out of it. In graduated college with a
         degree in marketing and management, and developed a career as an email
-        and digital marketer for 8 years.
+        and digital marketer for&nbsp;8&nbsp;years.
       </p>
       <p>
         I have always been facinated with the <i>how</i> behind sites and apps,

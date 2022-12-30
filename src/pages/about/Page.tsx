@@ -1,6 +1,5 @@
 import React from "react";
 import "./aboutPage.css";
-import me from "../../images/me.jpg";
 
 const AboutPage: React.FC = () => {
   return (
@@ -8,7 +7,6 @@ const AboutPage: React.FC = () => {
       {/* <h2>We're All Mad Here</h2> */}
       <h2>Pleased to Meet You Stranger</h2>
       <p>Welcome to the Ending</p>
-      <p>“Who are you?” </p>
       <div className="aboutMe-columns">
         <div className="aboutMe-columns_column">
           <h3>Who Am I?</h3>
