@@ -1,16 +1,9 @@
 import React from "react";
 import "./Header.css";
-import { IoPersonSharp, IoCog } from "react-icons/io5";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import me from "../../images/me.jpg";
-
-type Props = {
-  location: {};
-};
 
 const Header: React.FC = () => {
   return (

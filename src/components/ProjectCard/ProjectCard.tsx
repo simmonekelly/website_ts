@@ -1,8 +1,6 @@
 import React from "react";
 import "./projectcard.css";
 import { FaGithub } from "react-icons/fa";
-import ProjectsPage from "../../pages/projects/Page";
-//import { HiOutlineExternalLink, HiCode } from "react-icons/hi";
 
 type ProjectProps = {
   project: project;
@@ -17,7 +15,6 @@ type project = {
 };
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
-  //console.log(project);
   return (
     <div className="projectcard">
       <div className="projectcard_icon-header">
