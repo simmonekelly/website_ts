@@ -5,7 +5,8 @@
       { "name": "HTML5", "image": "FaHtml5" },
       { "name": "CSS", "image": "FaCss3Alt" },
       { "name": "TypeScript", "image": "SiTypescript" },
-      { "name": "JavaScript", "image": "IoLogoJavascript" }
+      { "name": "JavaScript", "image": "IoLogoJavascript" },
+      { "name": "Python", "image": "FaPython" }
     ]
   },
   {

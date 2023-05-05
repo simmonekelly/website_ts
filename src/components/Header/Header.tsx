@@ -17,8 +17,8 @@ const Header: React.FC = () => {
         New York, NY
       </div>
       <p>
-        Everyone fails at who they're supposed to be. The measure of a person is
-        how well they succeed at being who they are.
+        When I realized my Hawgwarts letter was never going to arrive, I decided
+        to learn the next best thing.
       </p>
       <nav>
         <p>About Me</p>
