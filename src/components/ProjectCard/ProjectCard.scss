@@ -1,0 +1,33 @@
+@use "../../styles/global" as *;
+
+.projectcard {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $light-yellow;
+  border-radius: 5px;
+  padding: 20px;
+  border: solid 1px $secondary-yellow;
+  box-shadow: 10px 5px 5px $secondary-yellow;
+
+  @include tablet {
+    width: 450px;
+    height: 300px;
+  }
+
+  &_icon {
+    height: 25px;
+    width: 25px;
+    &-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}

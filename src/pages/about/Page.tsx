@@ -1,9 +1,9 @@
 import React from "react";
-import "./aboutPage.css";
+import "./AboutPage.scss";
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="main-content_section">
+    <section className="main-content_section">
       {/* <h2>We're All Mad Here</h2> */}
       <h2>Pleased to Meet You Stranger</h2>
       <p>Welcome to the Ending</p>
@@ -29,7 +29,7 @@ const AboutPage: React.FC = () => {
         </div>
         <div className="aboutMe-columns_column">image</div>
       </div>
-    </div>
+    </section>
   );
 };
 

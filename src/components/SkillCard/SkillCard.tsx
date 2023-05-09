@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillCard.css";
+import "./SkillCard.scss";
 import type { SkillProps } from "./Skill";
 import Skill from "./Skill";
 

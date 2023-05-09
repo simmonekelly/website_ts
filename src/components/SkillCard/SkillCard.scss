@@ -1,0 +1,32 @@
+@use "../../styles/global" as *;
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-yellow;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding-top: 10px;
+  border: solid 1px $secondary-yellow;
+  box-shadow: 10px 5px 5px $secondary-yellow;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    max-width: 65%;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.skills-icon {
+  width: 30px;
+  height: 30px;
+  padding-bottom: 10px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Header.scss";
 import { GoLocation } from "react-icons/go";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
@@ -7,7 +7,7 @@ import me from "../../images/me.jpg";
 
 const Header: React.FC = () => {
   return (
-    <section className="header">
+    <div className="header">
       <h1>Simmone Kelly</h1>
       <div className="header-image_container">
         <img alt="simmone" className="header-image" src={me} />
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
           <FaLinkedin className="header-icon" />
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

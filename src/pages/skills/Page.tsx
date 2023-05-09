@@ -1,12 +1,12 @@
 import React from "react";
 import { SkillCard } from "../../components";
-import "./SkillsPage.css";
+import "./SkillsPage.scss";
 import data from "./skillsData.json";
 
 const SkillsPage: React.FC = () => {
   console.log(data);
   return (
-    <div className="main-content_section">
+    <section className="main-content_section">
       <h2>What's In My Tool Kit</h2>
       <p>
         I was first introduced to programming back before I knew that learning
@@ -29,7 +29,7 @@ const SkillsPage: React.FC = () => {
       {data.map((category, i) => {
         return <SkillCard skillCategory={category} key={i} />;
       })}
-    </div>
+    </section>
   );
 };
 

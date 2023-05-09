@@ -1,18 +1,20 @@
-import React from "react";
-import "./App.css";
-import ProjectPage from "./pages/projects/Page";
-import SkillsPage from "./pages/skills/Page";
+import { useEffect } from "react";
+import "./App.scss";
+import { ProjectsPage, SkillsPage, AboutPage } from "./pages";
 import Layout from "./components/Layout/Layout";
-import AboutPage from "./pages/about/Page";
 import "./styles/global.css";
 
 function App() {
+  useEffect(() => {
+    document.title = "Simmone Kelly";
+  }, []);
+
   return (
     <div className="App">
       <Layout>
         <AboutPage />
         <SkillsPage />
-        <ProjectPage />
+        <ProjectsPage />
       </Layout>
     </div>
   );

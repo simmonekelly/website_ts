@@ -1,5 +1,5 @@
 import React from "react";
-import "./projectcard.css";
+import "./ProjectCard.scss";
 import { FaGithub } from "react-icons/fa";
 
 type ProjectProps = {

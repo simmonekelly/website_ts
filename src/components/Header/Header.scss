@@ -1,0 +1,53 @@
+@use "../../styles/global" as *;
+
+.header {
+  padding: 20px;
+  background-color: $primary-yellow;
+
+  @include tablet {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    height: 100vh;
+    align-items: center;
+  }
+
+  &-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    &_container {
+      width: 250px;
+      height: 250px;
+      padding: 20px 0;
+    }
+  }
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  a {
+    color: inherit;
+    padding: 0 20px;
+  }
+
+  &-contactMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+nav {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
