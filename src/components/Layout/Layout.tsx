@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import Header from "../Header/Header";
 import "./Layout.scss";
-import { ColorPallete } from "./ColorPallete";
+// import { ColorPallete } from "./ColorPallete";
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (

@@ -4,7 +4,6 @@ import "./SkillsPage.scss";
 import data from "./skillsData.json";
 
 const SkillsPage: React.FC = () => {
-  console.log(data);
   return (
     <section className="main-content_section">
       <h2>What's In My Tool Kit</h2>

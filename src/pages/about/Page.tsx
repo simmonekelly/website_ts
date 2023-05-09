@@ -4,7 +4,6 @@ import "./AboutPage.scss";
 const AboutPage: React.FC = () => {
   return (
     <section className="main-content_section">
-      {/* <h2>We're All Mad Here</h2> */}
       <h2>Pleased to Meet You Stranger</h2>
       <p>Welcome to the Ending</p>
       <div className="aboutMe-columns">
