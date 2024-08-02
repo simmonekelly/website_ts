@@ -1,7 +1,9 @@
-$primary-yellow: #ffd131;
-$secondary-yellow: #f9dc5c;
-$light-yellow: #fcefb4;
-$yellow-white: #fdf8e1;
+$ash-grey: #a4b6a7;
+$alabaster: #E8E8D9;
+$isabellene: #F9F6F0;
+$champagne-pink: #EADED7;
+$mountbatten-pink: #A47985;
+$black: #363537;
 
 $desktop-breakpoint: 1280px;
 $tablet-breakpoint: 768px;
@@ -10,6 +12,7 @@ $tablet-breakpoint: 768px;
 
 * {
   font-family: "Fira Sans", sans-serif;
+  color: $black;
 }
 
 @mixin tablet {
