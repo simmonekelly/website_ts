@@ -23,7 +23,19 @@
     &_container {
       width: 250px;
       height: 250px;
-      padding: 20px 0;
+      padding: 20px 0 10px;
+    }
+  }
+
+  &-location_container {
+    @include tablet {
+      padding-bottom: 10px;
+    }
+  }
+
+  &-blurb {
+    @include tablet {
+      padding: 20px 0 30px;
     }
   }
 
@@ -37,6 +49,21 @@
     padding: 0 5px;
   }
 
+  a > svg {
+    &:hover {
+      fill: $champagne-pink;
+    }
+  }
+
+  .active {
+    color: $mountbatten-pink;
+    font-weight: 800;
+
+    &:hover {
+    color: $mountbatten-pink;
+    }
+  }
+
   &-contactMe {
     display: flex;
     flex-direction: row;
@@ -46,6 +73,7 @@
 
 nav {
   display: none;
+  padding-bottom: 20px;
 
   @include tablet {
     display: block;

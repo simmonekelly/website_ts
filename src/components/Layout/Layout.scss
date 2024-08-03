@@ -17,6 +17,10 @@
 
   &_section:nth-child(1) {
     padding: 30px 20px 0;
+
+    @include tablet {
+      padding: 20px 20px 0;
+    }
   }
 
   &_section:nth-child(2) {

@@ -5,7 +5,7 @@ import "./ProjectsPage.scss";
 
 const ProjectsPage: React.FC = () => {
   return (
-    <section className="main-content_section projects">
+    <section className="main-content_section projects" id="projects">
       <h2>Recent Projects</h2>
       <div className="projects-container">
         {data.map((project) => {

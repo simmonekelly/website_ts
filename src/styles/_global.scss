@@ -1,8 +1,8 @@
 $ash-grey: #a4b6a7;
-$alabaster: #E8E8D9;
-$isabellene: #F9F6F0;
-$champagne-pink: #EADED7;
-$mountbatten-pink: #A47985;
+$alabaster: #e8e8d9;
+$isabellene: #f9f6f0;
+$champagne-pink: #eaded7;
+$mountbatten-pink: #a47985;
 $black: #363537;
 
 $desktop-breakpoint: 1280px;
@@ -109,6 +109,14 @@ h4 {
 
   @include desktop {
     font-size: 18px;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: $champagne-pink;
   }
 }
 

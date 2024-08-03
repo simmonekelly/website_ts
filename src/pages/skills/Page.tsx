@@ -5,7 +5,7 @@ import data from "./skillsData.json";
 
 const SkillsPage: React.FC = () => {
   return (
-    <section className="main-content_section">
+    <section className="main-content_section" id="skills">
       <h2>What's In My Tool Kit</h2>
       <p>
         I was first introduced to programming back before I knew that learning
