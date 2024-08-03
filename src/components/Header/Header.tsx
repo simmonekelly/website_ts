@@ -6,10 +6,10 @@ import { MdOutlineMail } from "react-icons/md";
 import me from "../../images/me.jpg";
 
 const Header: React.FC = () => {
-  const [activeLink, setActiveLink] = useState<string>('');
+  const [activeLink, setActiveLink] = useState<string>("");
 
   const handleClick = (e: any) => {
-    setActiveLink(e.target.id)
+    setActiveLink(e.target.id);
     // need to update the active element with the onclick
     //or use react router to determine the location
   };
