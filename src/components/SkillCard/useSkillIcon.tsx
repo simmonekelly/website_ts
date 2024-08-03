@@ -8,6 +8,7 @@ import {
   FaCss3Alt,
   FaGithub,
   FaPython,
+  FaOctopusDeploy
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GrMysql, GrHeroku } from "react-icons/gr";
@@ -35,6 +36,7 @@ const useSkillIcon = (iconName: string) => {
   else if (iconName === "FaSass") return <FaSass className="skills-icon" />;
   else if (iconName === "FaGit") return <FaGit className="skills-icon" />;
   else if (iconName === "FaReact") return <FaReact className="skills-icon" />;
+  else if (iconName === "FaOctopusDeploy") return <FaOctopusDeploy className="skills-icon" />;
   else if (iconName === "FaNpm") return <FaNpm className="skills-icon" />;
   else if (iconName === "FaNodeJs") return <FaNodeJs className="skills-icon" />;
   else if (iconName === "IoLogoJavascript")

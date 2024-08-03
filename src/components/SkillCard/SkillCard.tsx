@@ -13,7 +13,7 @@ type SkillType = {
 };
 
 const SkillCard: React.FC<SkillCardProps> = ({ skillCategory }) => {
-  console.log(skillCategory);
+
   return (
     <div className="skill-category">
       <h3>{skillCategory.category}</h3>

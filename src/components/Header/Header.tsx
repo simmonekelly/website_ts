@@ -6,7 +6,7 @@ import { MdOutlineMail } from "react-icons/md";
 import me from "../../images/me.jpg";
 
 const Header: React.FC = () => {
-  const [activeLink, setActiveLink] = useState<string>('about');
+  const [activeLink, setActiveLink] = useState<string>('');
 
   const handleClick = (e: any) => {
     setActiveLink(e.target.id)

@@ -1,1 +1,12 @@
 @use "../../styles/global" as *;
+
+.skill-container {
+  display: block;
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

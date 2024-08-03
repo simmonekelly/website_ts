@@ -9,7 +9,7 @@ export type SkillProps = {
 const Skill: React.FC<SkillProps> = ({ image, name }) => {
   const skillIcon = useSkillIcon(image);
   return (
-    <div>
+    <div className="skill">
       <p>{name}</p>
       {skillIcon}
     </div>
