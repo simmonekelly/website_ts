@@ -1,7 +1,7 @@
 {
   "name": "website_ts",
   "version": "0.1.0",
-  "homepage": "http://simmonekelly.github.io/website_ts",
+  "homepage": "http://simmonekelly.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
