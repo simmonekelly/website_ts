@@ -1,8 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import Header from "../Header/Header";
 import styled from "styled-components";
-import { Breakpoint } from "../../styles/breakpoints";
-import { Colors } from "../../styles/styles";
+import { Colors, Breakpoint } from "../../styles/styles";
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
