@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import "./App.scss";
-import { ProjectsPage, SkillsPage, AboutPage } from "./pages";
+import { ProjectsPage, AboutPage } from "./pages";
 import Layout from "./components/Layout/Layout";
 import "./styles/global.css";
 import styled from "styled-components";
+import ExperiencePage from "./pages/experience/Page";
 
 function App() {
   useEffect(() => {
@@ -14,7 +15,7 @@ function App() {
     <Wrapper>
       <Layout>
         <AboutPage />
-        <SkillsPage />
+        <ExperiencePage />
         <ProjectsPage />
       </Layout>
     </Wrapper>

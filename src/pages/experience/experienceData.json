@@ -1,0 +1,9 @@
+[
+  {
+    "year": "2022 - Present",
+    "title": "Full Stack Software Engineer ",
+    "company": "Peloton",
+    "description": "Develop UIs, APIs, and workflows for our shop and subscription platform that include product catalog management, checkout, cart, payment processing, promotion management, etc.",
+    "tools": ["Typescript", "React", "Contentful", "Storybook", "Python", "GraphQL", "REST", "React Testing Library", "Design Systems"]
+  }
+]

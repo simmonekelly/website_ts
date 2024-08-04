@@ -42,8 +42,7 @@ const ProjectCardContainer = styled.div`
   box-shadow: 10px 5px 5px ${Colors.mountbattenPink};
 
   @media (min-width: ${Breakpoint.tablet}px) {
-    width: 450px;
-    height: 300px;
+    width: 60%;
   }
 `;
 
