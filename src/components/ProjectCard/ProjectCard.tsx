@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
-import { Breakpoint, Colors } from "../../styles/styles";
+import { Breakpoint, Colors, H3, Paragraph } from "../../styles/styles";
 
 type ProjectProps = {
   project: project;
@@ -19,13 +19,13 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
     <ProjectCardContainer>
       <HeaderContainer>
-        <h3>{project.name}</h3>
+        <H3>{project.name}</H3>
         <a href={project.github}>
           <StyledIcon />
         </a>
       </HeaderContainer>
-      <p>{project.description}</p>
-      <p>{project.tech}</p>
+      <Paragraph>{project.description}</Paragraph>
+      <Paragraph>{project.tech}</Paragraph>
     </ProjectCardContainer>
   );
 };

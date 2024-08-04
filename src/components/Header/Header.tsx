@@ -4,7 +4,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import me from "../../images/me.jpg";
 import styled from "styled-components";
-import { Breakpoint, Colors } from "../../styles/styles";
+import {
+  Breakpoint,
+  Colors,
+  H1,
+  H4,
+  Link,
+  Paragraph,
+} from "../../styles/styles";
 
 const Header: React.FC = () => {
   const [activeLink, setActiveLink] = useState<string>("");
@@ -17,45 +24,45 @@ const Header: React.FC = () => {
 
   return (
     <Container className="header">
-      <h1>Simmone Kelly</h1>
+      <H1>Simmone Kelly</H1>
       <HeaderImageContainer>
         <HeaderImage alt="simmone" src={me} />
       </HeaderImageContainer>
       <Location>
         <LocationIcon />
-        <p>New York, NY</p>
+        <Paragraph>New York, NY</Paragraph>
       </Location>
       <HeaderBlurb>
         When I realized my Hawgwarts letter was never going to arrive, I decided
         to learn the next&nbsp;best&nbsp;thing.
       </HeaderBlurb>
       <NavigationContainer>
-        <Link
+        <StyledLink
           href="#about-me"
           id="about"
           className={activeLink === "about" ? "active" : ""}
           onClick={(e) => handleClick(e)}
         >
           About Me
-        </Link>
-        <Link
+        </StyledLink>
+        <StyledLink
           href="#skills"
           id="skills"
           className={activeLink === "skills" ? "active" : ""}
           onClick={(e) => handleClick(e)}
         >
           Skills
-        </Link>
-        <Link
+        </StyledLink>
+        <StyledLink
           href="#projects"
           id="projects"
           className={activeLink === "projects" ? "active" : ""}
           onClick={(e) => handleClick(e)}
         >
           Projects
-        </Link>
+        </StyledLink>
       </NavigationContainer>
-      <h4>Contact Me</h4>
+      <H4>Contact Me</H4>
       <ContactMeSection>
         <IconLink href="mailto: simmone.kelly@gmail.com">
           <MdOutlineMail className="header-icon" />
@@ -118,7 +125,7 @@ const LocationIcon = styled(GoLocation)`
   height: 20px;
 `;
 
-const HeaderBlurb = styled.p`
+const HeaderBlurb = styled(Paragraph)`
   @media (min-width: ${Breakpoint.tablet}px) {
     padding: 20px 0 30px;
   }
@@ -133,7 +140,7 @@ const NavigationContainer = styled.nav`
   }
 `;
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
   color: inherit;
   padding: 0 5px;
 
@@ -144,10 +151,6 @@ const Link = styled.a`
     &:hover {
       color: ${Colors.mountbattenPink};
     }
-  }
-
-  &:hover {
-    color: ${Colors.alabaster};
   }
 `;
 

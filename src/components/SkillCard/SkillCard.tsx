@@ -3,7 +3,7 @@ import "./SkillCard.scss";
 import type { SkillProps } from "./Skill";
 import Skill from "./Skill";
 import styled from "styled-components";
-import { Breakpoint, Colors } from "../../styles/styles";
+import { Breakpoint, Colors, H3 } from "../../styles/styles";
 
 type SkillCardProps = {
   skillCategory: SkillType;
@@ -17,7 +17,7 @@ type SkillType = {
 const SkillCard: React.FC<SkillCardProps> = ({ skillCategory }) => {
   return (
     <SkillCardContainer>
-      <h3>{skillCategory.category}</h3>
+      <H3>{skillCategory.category}</H3>
       <SkillSection>
         {skillCategory.skill.map((skill) => {
           return <Skill image={skill.image} name={skill.name} />;

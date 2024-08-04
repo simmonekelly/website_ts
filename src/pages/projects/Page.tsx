@@ -3,11 +3,12 @@ import { ProjectCard } from "../../components";
 import data from "./projectsData.json";
 import SectionLayout from "../../components/Layout/SectionLayout";
 import styled from "styled-components";
+import { H2 } from "../../styles/styles";
 
 const ProjectsPage: React.FC = () => {
   return (
     <SectionLayout id="projects">
-      <h2>Recent Projects</h2>
+      <H2>Recent Projects</H2>
       <ProjectsContainer>
         {data.map((project) => {
           return <ProjectCard project={project} />;
