@@ -1,6 +1,7 @@
 import React from "react";
-import "./ProjectCard.scss";
 import { FaGithub } from "react-icons/fa";
+import styled from "styled-components";
+import { Breakpoint, Colors } from "../../styles/styles";
 
 type ProjectProps = {
   project: project;
@@ -16,17 +17,46 @@ type project = {
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="projectcard">
-      <div className="projectcard_icon-header">
+    <ProjectCardContainer>
+      <HeaderContainer>
         <h3>{project.name}</h3>
         <a href={project.github}>
-          <FaGithub className="projectcard_icon" />
+          <StyledIcon />
         </a>
-      </div>
+      </HeaderContainer>
       <p>{project.description}</p>
       <p>{project.tech}</p>
-    </div>
+    </ProjectCardContainer>
   );
 };
+
+const ProjectCardContainer = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: ${Colors.isabellene};
+  border-radius: 5px;
+  padding: 20px;
+  border: solid 1px ${Colors.champagnePink};
+  box-shadow: 10px 5px 5px ${Colors.mountbattenPink};
+
+  @media (min-width: ${Breakpoint.tablet}px) {
+    width: 450px;
+    height: 300px;
+  }
+`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const StyledIcon = styled(FaGithub)`
+  height: 25px;
+  width: 25px;
+`;
 
 export default ProjectCard;
