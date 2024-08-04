@@ -12,6 +12,10 @@ const SectionLayout: React.FC<React.PropsWithChildren<{ id: string }>> = ({
 const Section = styled.section`
   &:nth-child(1) {
     padding: 30px 20px 0;
+
+    @media (min-width: ${Breakpoint.tablet}px) {
+      padding: 20px 20px 0;
+    }
   }
 
   &:nth-child(2) {
@@ -24,12 +28,6 @@ const Section = styled.section`
     border-top: solid 2px ${Colors.mountbattenPink};
     margin-top: 30px;
     padding: 30px 20px 0;
-  }
-
-   @media (min-width: ${Breakpoint.tablet} {
-    &:nth-child(1) {
-      padding: 20px 20px 0;
-    }
   }
 `;
 
