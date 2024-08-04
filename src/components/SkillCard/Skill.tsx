@@ -1,5 +1,6 @@
 import React from "react";
 import useSkillIcon from "./useSkillIcon";
+import styled from "styled-components";
 
 export type SkillProps = {
   image: string;
@@ -9,11 +10,15 @@ export type SkillProps = {
 const Skill: React.FC<SkillProps> = ({ image, name }) => {
   const skillIcon = useSkillIcon(image);
   return (
-    <div className="skill">
+    <SkillContainer>
       <p>{name}</p>
       {skillIcon}
-    </div>
+    </SkillContainer>
   );
 };
+
+const SkillContainer = styled.div`
+  margin: 10px;
+`;
 
 export default Skill;
