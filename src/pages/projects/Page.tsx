@@ -1,19 +1,28 @@
 import React from "react";
 import { ProjectCard } from "../../components";
 import data from "./projectsData.json";
-import "./ProjectsPage.scss";
+import SectionLayout from "../../components/Layout/SectionLayout";
+import styled from "styled-components";
+import { H2 } from "../../styles/styles";
 
 const ProjectsPage: React.FC = () => {
   return (
-    <section className="main-content_section projects" id="projects">
-      <h2>Recent Projects</h2>
-      <div className="projects-container">
+    <SectionLayout id="projects">
+      <H2>Recent Projects</H2>
+      <ProjectsContainer>
         {data.map((project) => {
           return <ProjectCard project={project} />;
         })}
-      </div>
-    </section>
+      </ProjectsContainer>
+    </SectionLayout>
   );
 };
+
+const ProjectsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`;
 
 export default ProjectsPage;
