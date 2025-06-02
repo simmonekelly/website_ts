@@ -1,28 +1,28 @@
 [
   {
     "name": "Last Set Best Set",
-    "description": "Brainstation Capstone Project where I built an web app that lets you log and track your workouts using React, Node, and Express.",
+    "description": "Brainstation Capstone Project where I built a web app that lets you log and track your workouts using React, Node, and Express.",
     "github": "https://github.com/simmonekelly/simmone-kelly-capstone-lastsetbestset",
     "link": "",
     "tech": "React | Express | Sass"
   },
   {
     "name": "Q & A",
-    "description": "Q & A is a web based application with focus on an FAQ that would allow employees to feel connected and reduce anxiety associated with waiting for answers from HR enabling empowerment and saving company dollars.",
+    "description": "Q & A is a web-based application focused on an FAQ that helps employees feel connected, reduces anxiety about waiting for HR answers, and saves company dollars.", 
     "github": "https://github.com/simmonekelly/brainstation-industry-project",
     "link": "",
     "tech": "React | Express | Sass | Hackathon"
   },
   {
     "name": "BrainFlix",
-    "description": "Video streaming platform using React for front-end development and Express for back-end development.",
+    "description": "Video streaming platform using React for front-end and Express for back-end development.", 
     "github": "https://github.com/simmonekelly/simmone-kelly-brainflix",
     "link": "",
     "tech": "React| Sass | Express"
   },
   {
-    "name": "Band Site",
-    "description": "Bandsite project for Web Development Bootcamp that is a dynamic website with API data handling, utilizing Vanilla JS, SASS, and HTML",
+    "name": "Band Site", 
+    "description": "Band Site project for Web Development Bootcamp that is a dynamic website with API integration, using Vanilla JS, SASS, and HTML", 
     "github": "https://github.com/simmonekelly/simmone-kelly-bandsite",
     "link": "https://simmonekelly.github.io/simmone-kelly-bandsite/",
     "tech": "Vanilla JS | Axios | Sass | HTML"

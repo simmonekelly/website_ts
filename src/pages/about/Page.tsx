@@ -27,7 +27,7 @@ const AboutPage: React.FC = () => {
           I was first introduced to programming back when I was just trying to
           have a sweet custome Myspace page, and loved every aspect of it, but
           had no idea you could create a career out of it. I went to college and
-          graduated with a degree in marketing and management, and persued a
+          graduated with a degree in marketing and management, and pursued a
           career in email and digital marketing for&nbsp;8&nbsp;years.
         </Paragraph>
         <Paragraph>
