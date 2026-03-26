@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme, Breakpoint, H2, Paragraph } from "../styles/styles";
+import { theme, H2, Paragraph } from "../styles/styles";
 import { SectionLayout } from "../components/Layout/SectionLayout";
 
 const AboutPage: React.FC = () => {

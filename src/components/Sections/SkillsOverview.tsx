@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { theme, Breakpoint, H2, H4, Paragraph } from "../../styles/styles";
+import { Breakpoint, H2, H4, Paragraph } from "../../styles/styles";
 import { SectionLayout } from "../Layout/SectionLayout";
 import skillsData from "../../data/skillsData.json";
 
