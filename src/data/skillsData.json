@@ -1,0 +1,14 @@
+[
+  {
+    "category": "Languages",
+    "skills": ["HTML5", "CSS", "TypeScript", "JavaScript", "Python"]
+  },
+  {
+    "category": "Frameworks",
+    "skills": ["Express", "React", "Node.js", "styled-components"]
+  },
+  {
+    "category": "Tools",
+    "skills": ["GraphQL", "Git", "AWS", "GitHub Actions", "Docker"]
+  }
+]
