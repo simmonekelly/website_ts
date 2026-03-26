@@ -1,34 +1,37 @@
 import React from "react";
 import styled from "styled-components";
-import { Breakpoint, Colors } from "../../styles/styles";
+import { theme, Breakpoint } from "../../styles/styles";
 
-const SectionLayout: React.FC<React.PropsWithChildren<{ id: string }>> = ({
+type SectionLayoutProps = React.PropsWithChildren<{
+  id: string;
+  variant?: "default" | "alt";
+}>;
+
+export const SectionLayout: React.FC<SectionLayoutProps> = ({
   id,
+  variant = "default",
   children,
 }) => {
-  return <Section id={id}>{children}</Section>;
+  return (
+    <Section id={id} $variant={variant}>
+      <ContentWrapper>{children}</ContentWrapper>
+    </Section>
+  );
 };
 
-const Section = styled.section`
-  &:nth-child(1) {
-    padding: 30px 20px 0;
+const Section = styled.section<{ $variant: "default" | "alt" }>`
+  background-color: ${({ $variant }) =>
+    $variant === "alt" ? theme.colors.backgroundAlt : theme.colors.background};
+  padding: 48px 20px;
 
-    @media (min-width: ${Breakpoint.tablet}px) {
-      padding: 20px 20px 0;
-    }
+  @media (min-width: ${Breakpoint.tablet}px) {
+    padding: 64px 32px;
   }
+`;
 
-  &:nth-child(2) {
-    border-top: solid 2px ${Colors.mountbattenPink};
-    margin-top: 30px;
-    padding: 30px 20px 0;
-  }
-
-  &:nth-child(3) {
-    border-top: solid 2px ${Colors.mountbattenPink};
-    margin-top: 30px;
-    padding: 30px 20px 0;
-  }
+const ContentWrapper = styled.div`
+  max-width: 700px;
+  margin: 0 auto;
 `;
 
 export default SectionLayout;
