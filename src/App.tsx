@@ -1,10 +1,11 @@
-import { useEffect } from "react";
-import "./App.scss";
-import { ProjectsPage, AboutPage } from "./pages";
-import Layout from "./components/Layout/Layout";
-import "./styles/global.css";
-import styled from "styled-components";
-import ExperiencePage from "./pages/experience/Page";
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import { Nav } from "./components/Nav/Nav";
+import { Footer } from "./components/Footer";
+import LandingPage from "./pages/LandingPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ExperiencePage from "./pages/ExperiencePage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   useEffect(() => {
@@ -12,18 +13,19 @@ function App() {
   }, []);
 
   return (
-    <Wrapper>
-      <Layout>
-        <AboutPage />
-        <ExperiencePage />
-        <ProjectsPage />
-      </Layout>
-    </Wrapper>
+    <>
+      <Nav />
+      <main>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
   );
 }
-
-const Wrapper = styled.div`
-  text-align: center;
-`;
 
 export default App;

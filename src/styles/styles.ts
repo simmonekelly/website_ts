@@ -1,102 +1,101 @@
 import styled from "styled-components";
+import { theme } from "./theme";
 
-export const Breakpoint = {
-  desktop: 1280,
-  tablet: 768,
-};
+export { theme };
 
-export const Colors = {
-  ashGrey: "#a4b6a7",
-  alabaster: "#e8e8d9",
-  isabellene: "#f9f6f0",
-  champagnePink: "#eaded7",
-  mountbattenPink: "#a47985",
-  black: "#363537",
-};
+export const Breakpoint = theme.breakpoints;
 
-export const Paragraph = styled.p`
+export const H1 = styled.h1`
+  font-family: ${theme.fonts.display};
   font-weight: 400;
-  font-size: 14px;
+  font-size: 36px;
   margin: 0;
-  padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 1.1;
+  color: ${theme.colors.primaryText};
+
+  @media (min-width: ${Breakpoint.tablet}px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: ${Breakpoint.desktop}px) {
+    font-size: 56px;
+  }
+`;
+
+export const H2 = styled.h2`
+  font-family: ${theme.fonts.body};
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  line-height: 1.3;
+  color: ${theme.colors.primaryText};
+
+  @media (min-width: ${Breakpoint.tablet}px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: ${Breakpoint.desktop}px) {
+    font-size: 32px;
+  }
+`;
+
+export const H3 = styled.h3`
+  font-family: ${theme.fonts.body};
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.3;
+  color: ${theme.colors.primaryText};
 
   @media (min-width: ${Breakpoint.tablet}px) {
     font-size: 18px;
-    line-height: 22px;
   }
 
   @media (min-width: ${Breakpoint.desktop}px) {
     font-size: 20px;
-    line-height: 24px;
   }
-`
+`;
 
-export const H1 = styled.h1 `
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 900;
-  font-size: 24px;
-  margin: 0;
-  padding-bottom: 10px;
-
-  @media (min-width: ${Breakpoint.tablet}px) {
-    font-size: 46px;
-  }
-
-  @media (min-width: ${Breakpoint.desktop}px) {
-    font-size: 46px;
-  }
-`
-
-export const H2 = styled.h2 `
+export const H4 = styled.h4`
+  font-family: ${theme.fonts.body};
   font-weight: 700;
-  font-size: 20px;
+  font-size: 10px;
   margin: 0;
-  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: ${theme.colors.primary};
+
+  @media (min-width: ${Breakpoint.desktop}px) {
+    font-size: 11px;
+  }
+`;
+
+export const Paragraph = styled.p`
+  font-family: ${theme.fonts.body};
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+  color: ${theme.colors.primaryText};
 
   @media (min-width: ${Breakpoint.tablet}px) {
-    font-size: 36px;
+    font-size: 15px;
   }
 
   @media (min-width: ${Breakpoint.desktop}px) {
-    font-size: 36px;
+    font-size: 16px;
   }
-`
+`;
 
-export const H3 = styled.h3 `
-  font-weight: 500;
-  font-size: 18px;
+export const MutedText = styled.p`
+  font-family: ${theme.fonts.body};
+  font-weight: 400;
+  font-size: 12px;
   margin: 0;
-  padding-bottom: 10px;
-
-  @media (min-width: ${Breakpoint.tablet}px) {
-    font-size: 24px;
-  }
+  line-height: 1.6;
+  color: ${theme.colors.mutedText};
 
   @media (min-width: ${Breakpoint.desktop}px) {
-    font-size: 24px;
+    font-size: 13px;
   }
-`
-
-export const H4 = styled.h4 `
-  font-weight: 500;
-  font-size: 16px;
-  margin: 0;
-  padding-bottom: 10px;
-
-  @media (min-width: ${Breakpoint.tablet}px) {
-    font-size: 18px;
-  }
-
-  @media (min-width: ${Breakpoint.desktop}px) {
-    font-size: 18px;
-  }
-`
-
-export const Link = styled.a`
-  text-decoration: none;
-
-  &:hover {
-    color: ${Colors.alabaster};
-  }
-`
+`;
