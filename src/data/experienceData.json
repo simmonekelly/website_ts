@@ -5,5 +5,26 @@
     "company": "Peloton",
     "description": "Develop UIs, APIs, and workflows for our shop and subscription platform that include product catalog management, checkout, cart, payment processing, promotion management, etc.",
     "tools": ["Typescript", "React", "Contentful", "Storybook", "Python", "GraphQL", "REST", "React Testing Library", "Design Systems"]
+  },
+  {
+    "year": "2021 - 2022",
+    "title": "Senior Order Experience Email Specialist",
+    "company": "Peloton",
+    "description": "Lead cross-functional communication strategy and automation workflows to optimize the end-to-end delivery experience, with a focus on scalability and data-driven campaign performance.",
+    "tools": []
+  },
+  {
+    "year": "2019 - 2021",
+    "title": "Associate Marketing Manager",
+    "company": "CaaStle",
+    "description": " Drove measurable improvements in conversion and retention by redesigning campaign funnels, leveraging data analysis for tactical testing, and collaborating with product teams to align marketing goals with technical execution.",
+    "tools": []
+  },
+  {
+    "year": "2017 - 2019",
+    "title": "Associate Marketing Manager",
+    "company": "Biotix",
+    "description": "Led the migration to a new marketing automation platform and managed technical lead-gen operations, improving lead-to-customer conversion by 5% while ensuring data integrity across CRM systems for global initiatives.",
+    "tools": []
   }
 ]
