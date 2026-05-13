@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
             Full-Stack Web Developer building things that matter. Based in NYC.
           </Subtitle>
           <ButtonGroup>
-            <Button href="/resume.pdf" target="_blank" rel="noreferrer" primary>
+            <Button href="/Simmone Kelly - Software Engineer.pdf" target="_blank" rel="noreferrer" primary>
               Download Resume
             </Button>
             <Button href="#contact">Contact Me</Button>

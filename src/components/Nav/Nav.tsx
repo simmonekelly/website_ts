@@ -50,7 +50,7 @@ export const Nav: React.FC = () => {
             </>
           )}
           <NavRouterLink to="/about">About</NavRouterLink>
-          <ResumeButton href="/resume.pdf" target="_blank" rel="noreferrer">
+          <ResumeButton href="/Simmone Kelly - Software Engineer.pdf" target="_blank" rel="noreferrer">
             Resume
           </ResumeButton>
         </NavLinks>
